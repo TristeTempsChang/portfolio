@@ -1,0 +1,33 @@
+<div class="bg-[#58A4B0] flex items-center py-4 px-6 justify-between">
+    <h1 class="font-Montserrat font-bold text-xl text-white">
+        <span class="text-[#186E8B]">Tristan</span> Tran
+    </h1>
+    <div>
+        <i class="fa-solid fa-bars text-white text-xl" (click)="openNav()"></i>
+    </div>
+</div>
+
+<div class="fixed inset-0 bg-[#186E8B] overflow-x-hidden z-50 transition duration-700 transform text-white"
+    [ngClass]="{'translate-x-full': !showNav, 'translate-x-0': showNav}">
+
+    <!-- Button to close the overlay navigation -->
+    <a class="absolute top-4 right-8 text-white text-4xl" (click)="closeNav()" (keydown.enter)="closeNav()"
+        tabindex="0">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="absolute top-1/4 text-xl w-full text-center font-OpenSans transition duration-[800ms] transform"
+        [ngClass]="{'translate-y-full': !showNav, 'translate-y-0': showNav}">
+        <a href="#" class="block py-2 hover:text-white">About me</a>
+        <a href="#" class="block py-2 hover:text-white">Skills</a>
+        <a href="#" class="block py-2 hover:text-white">Experience</a>
+        <a href="#" class="block py-2 hover:text-white">Projects</a>
+        <a href="#" class="block py-2 hover:text-white">Contact</a>
+    </div>
+
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-5 text-2xl mt-5 pb-10 transition duration-[800ms]"
+        [ngClass]="{'translate-y-full': !showNav, 'translate-y-0': showNav}">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-gitlab"></i>
+    </div>
+</div>
