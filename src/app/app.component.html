@@ -1,37 +1,39 @@
 <app-header></app-header>
 
 <!-- Bloc Home -->
-<div class="bg-[#58A4B0] pt-5 pb-10 container">
+<div class="bg-[#58A4B0] pt-5 pb-10 md:flex md:flex-row-reverse md:justify-center md:gap-14 md:items-center">
   <div class="flex justify-center">
-    <img [src]="assetsUrl" alt="info-guy" class="w-44 h-44" />
+    <img src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56" />
   </div>
 
-  <div class="text-center text-white font-OpenSans mt-4">
-    <p class="font-bold text-xl">Hello I'm</p>
-    <p class="font-Montserrat font-extrabold text-2xl text-white">Tristan Tran</p>
-    <p class="font-bold text-xl">
-      And I'm a 
-      <span id="text" class="text-xl font-bold text-[#186E8B]"></span>
-      <span class="text-[#186E8B]" id="console">&#95;</span>
-    </p>
-  </div>
+  <div>
+    <div class="text-center text-white font-OpenSans mt-4 md:text-left">
+      <p class="font-bold text-xl md:text-2xl">Hello I'm</p>
+      <p class="font-Montserrat font-extrabold text-2xl text-white md:text-3xl">Tristan Tran</p>
+      <p class="font-bold text-xl md:text-2xl">
+        And I'm a 
+        <span id="text" class="text-xl font-bold text-[#186E8B] md:text-2xl"></span>
+        <span class="text-[#186E8B]" id="console">&#95;</span>
+      </p>
+    </div>
 
-  <div class="flex justify-center mt-3 mb-5">
-    <p class="text-center text-white w-56">
-      I'm a junior web developer still studying, whose aim is to create useful, 
-      high-quality applications and websites for users.
-    </p>
-  </div>
+    <div class="flex justify-center md:justify-start mt-3 mb-5">
+      <p class="text-center text-white w-56 md:text-left text-sm">
+        I'm a junior web developer still studying, whose aim is to create useful, 
+        high-quality applications and websites for users.
+      </p>
+    </div>
 
-  <div class="flex justify-center text-[#186E8B]">
-    <button class="rounded-full border border-[#186E8B] py-1 px-6">
-      Download CV
-    </button>
+    <div class="flex justify-center text-[#186E8B] md:justify-start">
+      <button class="rounded-full border border-[#186E8B] py-1 px-6">
+        Download CV
+      </button>
+    </div>
   </div>
 </div>
 
 <!-- Bloc About Me -->
-<div class="px-10 py-8 container">
+<div class="px-10 py-8">
   <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold" >About me.</h2>
   <div class="flex justify-center my-10">
     <div class="relative inline-block">
@@ -63,7 +65,7 @@
 </div>
 
 <!-- Bloc Skills -->
-<div class="px-10 py-8 container bg-[#58A4B0]">
+<div class="px-10 py-8 bg-[#58A4B0]">
   <h2 class="text-xl font-Montserrat text-white font-bold" >Skills.</h2>
   <div class="flex flex-wrap gap-6 justify-center my-8">
     <div class="bg-white rounded-xl flex justify-center p-1 w-24 drop-shadow-md">
@@ -249,13 +251,107 @@
 </div>
 
 <!-- Bloc Projects -->
-<div class="px-10 py-8 container bg-[#58A4B0]">
+<div class="px-10 py-8 bg-[#58A4B0]">
   <h2 class="text-xl font-Montserrat text-white font-bold" >Projects.</h2>
+  <div class="flex flex-wrap gap-14 mt-10 mb-8">
+    @for (project of projectList; track project) {
+      <div class="bg-[#186E8B] p-5 rounded-xl">
+        <img [src]="project.image" class="w-full h-48 rounded-xl object-cover" alt="project image" />
+        <p class="text-center text-white text-xl font-semibold my-2">{{project.name}}</p>
+        <div class="flex flex-wrap gap-2">
+          @for (code of project.language; track code) {
+            <div class="bg-[#58A4B0] text-[#186E8B] rounded-full py-[1.5px]  px-4 font-semibold">
+              <p class="text-sm">{{code.language}}</p>
+            </div>
+          }
+        </div>
+        <p class="text-white my-5 text-sm">{{project.text}}</p>
+        <div class="block mt-6">
+          <a href="{{project.siteLink}}">
+            <button class="text-white flex items-center bg-[#1C95BD] rounded-full py-2 w-full justify-center gap-3 mb-4">
+              <i class="fa-solid fa-share-from-square mb-1"></i>
+              <p>Go to the site</p>
+            </button>
+          </a>
+          @if(project.github === false) {
+            <a href="{{project.gitLink}}">
+              <button class="text-white flex items-center bg-[#E34C26] rounded-full py-2 w-full justify-center gap-3">
+                <i class="fa-brands fa-gitlab"></i>
+                <p>Source code</p>
+              </button>
+            </a>
+          } @else {
+            <a href="{{project.gitLink}}">
+              <button class="text-white flex items-center bg-black rounded-full py-2 w-full justify-center gap-3">
+                <i class="fa-brands fa-github"></i>
+                <p>Source code</p>
+              </button>
+            </a>
+          }
+        </div>
+      </div>
+    }
+  </div>
 </div>
 
 <!-- Bloc Contact -->
-<div class="px-10 py-8 container">
+<div class="px-10 py-8">
   <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold" >Contact.</h2>
+  <div class="mt-8 mb-5">
+    <div class="bg-[#186E8B] text-white py-4 px-7 rounded-t-3xl">
+      <p class="text-2xl font-semibold font-Montserrat text-center">Let's get in touch !</p>
+      <p class="text-center mt-2 text-sm italic font-light">
+        Please feel free to use my contact details and this contact form 
+        if you wish to get in touch with me.
+      </p>
+      <div class="flex my-5 items-center gap-3">
+        <i class="fa-solid fa-envelope text-2xl"></i>
+        <p class="text-xs font-semibold">tristan.tran2111&#64;gmail.com</p>
+      </div>
+
+      <div class="flex mb-5 items-center gap-3">
+        <i class="fa-solid fa-phone text-2xl"></i>
+        <p class="text-sm font-semibold">+33 7 49 61 36 42</p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-location-dot text-2xl"></i>
+        <p class="text-sm font-semibold">Rennes, France</p>
+      </div>
+    </div>
+
+    <div class="p-7 shadow rounded-b-3xl flex justify-center">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="mail" class="text-sm text-[#666666]">Your Email</label>
+          <input type="email" id="mail" name="mail" class="border-b" formControlName="mail">
+        </div>
+
+        <div class="mt-8">
+          <label for="name" class="text-sm text-[#666666]">Your Name</label>
+          <input type="text" id="name" name="name" class="border-b" formControlName="name">
+        </div>
+
+        <div class="mt-8">
+          <label for="subject" class="text-sm text-[#666666]">Your Subject</label>
+          <input type="text" id="subject" name="subject" class="border-b" formControlName="subject">
+        </div>
+
+        <div class="my-8">
+          <label for="subject" class="text-sm text-[#666666]">Your Message</label>
+          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Bonjour,"></textarea>
+        </div>
+
+
+        <button
+          class="bg-[#186E8B] rounded-xl text-white w-full py-2"
+          type="submit"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>
