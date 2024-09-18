@@ -1,31 +1,32 @@
 <app-header></app-header>
 
 <!-- Bloc Home -->
-<div class="bg-[#58A4B0] pt-5 pb-10 md:flex md:flex-row-reverse md:justify-center md:gap-14 md:items-center">
+<div class="bg-[#58A4B0] pt-5 pb-10 md:flex md:flex-row-reverse md:justify-center md:gap-14 md:items-center lg:pt-16 lg:pb-20 xl:gap-24">
   <div class="flex justify-center">
-    <img src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56" />
+    <img src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72" />
   </div>
 
   <div>
     <div class="text-center text-white font-OpenSans mt-4 md:text-left">
-      <p class="font-bold text-xl md:text-2xl">Hello I'm</p>
-      <p class="font-Montserrat font-extrabold text-2xl text-white md:text-3xl">Tristan Tran</p>
-      <p class="font-bold text-xl md:text-2xl">
+      <p class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">Hello I'm</p>
+      <p class="font-Montserrat font-extrabold text-2xl text-white md:text-3xl lg:text-4xl xl:text-5xl">Tristan Tran</p>
+      <p class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
         And I'm a 
-        <span id="text" class="text-xl font-bold text-[#186E8B] md:text-2xl"></span>
-        <span class="text-[#186E8B]" id="console">&#95;</span>
+        <!-- <span id="text" class="text-xl font-bold text-[#186E8B] md:text-2xl lg:text-4xl"></span> -->
+        <!-- <span class="text-[#186E8B]" id="console">&#95;</span> -->
+         <span class="text-[#186E8B]">Full-Stack Developer</span>
       </p>
     </div>
 
     <div class="flex justify-center md:justify-start mt-3 mb-5">
-      <p class="text-center text-white w-56 md:text-left text-sm">
-        I'm a junior web developer still studying, whose aim is to create useful, 
+      <p class="text-center text-white w-56 md:text-left text-sm lg:text-base md:w-80 lg:w-96">
+        I'm a junior web developer still studying, whose aim is to create useful,
         high-quality applications and websites for users.
       </p>
     </div>
 
     <div class="flex justify-center text-[#186E8B] md:justify-start">
-      <button class="rounded-full border border-[#186E8B] py-1 px-6">
+      <button class="rounded-full border border-[#186E8B] py-1 px-6 xl:py-2 xl:px-10">
         Download CV
       </button>
     </div>
@@ -33,41 +34,45 @@
 </div>
 
 <!-- Bloc About Me -->
-<div class="px-10 py-8">
-  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold" >About me.</h2>
-  <div class="flex justify-center my-10">
-    <div class="relative inline-block">
-      <div class="absolute inset-0 bg-[#58A4B0] w-36 h-full translate-x-4 translate-y-4"></div>
-      <img src="../assets/moi.jpeg" class="relative w-36 h-auto" alt="moi" />
+<div class="px-10 py-8 md:px-14 lg:px-32 xl:px-52">
+  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl" >About me.</h2>
+  <div class="md:flex md:flex-row-reverse md:justify-between md:my-10">
+    <div class="flex justify-center my-10 xl:my-0">
+      <div class="relative inline-block">
+        <div class="absolute inset-0 bg-[#58A4B0] w-36 h-full translate-x-4 translate-y-4 md:w-full"></div>
+        <img src="../assets/moi.jpeg" class="relative w-36 h-full md:w-full xl:w-52" alt="moi" />
+      </div>
+    </div>
+    <div class="md:w-3/5">
+      <p class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl">
+        Hi, I'm Tristan Tran, a web development student. 
+        I'm currently in my first year of an MBA in full-stack development.
+      </p>
+      <p class="mt-6 mb-3 text-sm font-light text-[#186E8B]">
+        I started working in web development at the end of high school after graduating from high school. 
+        I've been in this field for over 3 years now.
+      </p>
+      <p class="mb-3 text-sm font-light text-[#186E8B]">
+        During these 3 years, when I had the immense privilege of being able to study on a sandwich course throughout my career, 
+        I obtained the following degrees :
+      </p>
+      <ul class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4">
+        <li>BTS SIO  ( Bac + 2 )</li>
+        <li>Bachelor Concepteur Développeur D’applications  ( Bac + 3 )</li>
+      </ul>
+      <p class="text-sm font-light text-[#186E8B]">
+        My skills don't stop at development, I also do web design and SEO. 
+        When I'm not watching code, I watch movies, practice or watch sports, 
+        and play video games.
+      </p>
     </div>
   </div>
-  <p class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans">
-    Hi, I'm Tristan Tran, a web development student. 
-    I'm currently in my first year of an MBA in full-stack development.
-  </p>
-  <p class="mt-6 mb-3 text-sm font-light text-[#186E8B]">
-    I started working in web development at the end of high school after graduating from high school. 
-    I've been in this field for over 3 years now.
-  </p>
-  <p class="mb-3 text-sm font-light text-[#186E8B]">
-    During these 3 years, when I had the immense privilege of being able to study on a sandwich course throughout my career, 
-    I obtained the following degrees :
-  </p>
-  <ul class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4">
-    <li>BTS SIO  ( Bac + 2 )</li>
-    <li>Bachelor Concepteur Développeur D’applications  ( Bac + 3 )</li>
-  </ul>
-  <p class="text-sm font-light text-[#186E8B]">
-    My skills don't stop at development, I also do web design and SEO. 
-    When I'm not watching code, I watch movies, practice or watch sports, 
-    and play video games.
-  </p>
 </div>
 
 <!-- Bloc Skills -->
-<div class="px-10 py-8 bg-[#58A4B0]">
-  <h2 class="text-xl font-Montserrat text-white font-bold" >Skills.</h2>
-  <div class="flex flex-wrap gap-6 justify-center my-8">
+<div class="px-10 py-8 bg-[#58A4B0] md:px-14 lg:px-32">
+  <h2 class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl" >Skills.</h2>
+  <div class="flex flex-wrap gap-6 justify-center lg:justify-start my-8 md:my-12">
     <div class="bg-white rounded-xl flex justify-center p-1 w-24 drop-shadow-md">
       <div>
         <img src="../assets/html5.png" class="w-12 h-12 mt-2" alt="html" />
@@ -169,9 +174,10 @@
 </div>
 
 <!-- Bloc Experience -->
-<div class="py-8">
-  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold px-10" >Experience.</h2>
-  <div class="flex justify-center my-8">
+<div class="py-8 md:px-5 lg:px-20">
+  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold px-10 md:text-2xl md:mt-3 lg:text-3xl" >Experience.</h2>
+  <!-- Mobile version -->
+  <div class="flex justify-center my-8 md:hidden">
     <div>
       <div class="flex gap-6 items-start">
         <div>
@@ -248,46 +254,129 @@
       </div>
     </div>
   </div>
+  <!-- ///////////////// -->
+
+  <!-- Tablet Desktop version -->
+  <div class="md:flex justify-center mt-8 mb-14 hidden lg:mt-14 lg:mb-20">
+    <div>
+      <div class="flex justify-center gap-6 items-start lg:mr-[3.6rem]">
+        <div class="w-52 lg:w-72 mt-6">
+          <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
+            <div class="absolute -right-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[10px] border-l-[#58A4B0]"></div>
+            <p class="text-lg font-semibold lg:text-xl">Sandwich Course</p>
+            <p class="text-sm font-semibold lg:text-base">Arcatem - BTS SIO</p>
+            <p class="text-xs lg:text-sm mt-2">
+              During my BTS, I worked as a service provider for BNP PARIBAS. 
+              I was a member of the User Access Security administration team and assistant full-stack developer 
+              on an enterprise web application project for firewall and flow management.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-[#186E8B] rounded-full py-4 px-5 mt-6">
+            <i class="fa-solid fa-briefcase text-xl text-white"></i>
+          </div>
+          <div class="flex justify-center h-[15rem]">
+            <div class="bg-[#186E8B] w-1"></div>
+          </div>
+        </div>
+        <p class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base">September 2021 - July 2023</p>        
+      </div>
+
+    <div class="flex gap-6 justify-center items-start -mt-5 ml-3 lg:ml-14">
+      <p class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base">September 2023 - August 2024</p>
+      <div>
+        <div class="bg-[#186E8B] rounded-full py-4 px-5 mt-5">
+          <i class="fa-solid fa-briefcase text-xl text-white"></i>
+        </div>
+        <div class="flex justify-center h-[19rem]">
+          <div class="bg-[#186E8B] w-1"></div>
+        </div>
+      </div>
+
+      <div class="w-52 lg:w-72 mt-6">
+        <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
+          <div class="absolute -left-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#58A4B0]"></div>
+          <p class="text-lg font-semibold lg:text-xl">Sandwich Course</p>
+          <p class="text-sm font-semibold lg:text-base">SeniorMedia - Bachelor</p>
+          <p class="text-xs lg:text-sm mt-2">
+            During my Bachelor, I worked as a Work-study full stack developer. 
+            I designed and integrated new pages on the company's web applications. 
+            I also developed new functionalities on the company's web applications, 
+            took part in the maintenance and development of new functionalities on the company's CRM and was able to work on SEO management.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="flex gap-6 items-start -mt-5 ml-4">
+        <div class="w-52 lg:w-72 mt-6">
+          <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
+            <div class="absolute -right-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[10px] border-l-[#58A4B0]"></div>
+            <p class="text-lg font-semibold lg:text-xl">Sandwich Course</p>
+            <p class="text-sm font-semibold lg:text-base">WeLoveCustomer - MBA</p>
+            <p class="text-xs mt-2 lg:text-sm">
+              I'm currently doing a work-study program at WeLoveCustomer, working as a full-stack developer.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-[#186E8B] rounded-full py-4 px-5 mt-5">
+            <i class="fa-solid fa-briefcase text-xl text-white"></i>
+          </div>
+          <div class="flex justify-center h-[5rem]">
+            <div class="bg-[#186E8B] w-1"></div>
+          </div>
+        </div>
+        <p class="font-Montserrat font-light text-sm text-center mb-2 mt-10 lg:text-base">September 2024 - Present</p>
+      </div>
+    </div>
+  </div>
+  <!-- ///////////////// -->
 </div>
 
 <!-- Bloc Projects -->
-<div class="px-10 py-8 bg-[#58A4B0]">
-  <h2 class="text-xl font-Montserrat text-white font-bold" >Projects.</h2>
-  <div class="flex flex-wrap gap-14 mt-10 mb-8">
+<div class="px-10 py-8 bg-[#58A4B0] md:px-14 lg:px-32">
+  <h2 class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl" >Projects.</h2>
+  <div class="flex flex-wrap gap-14 mt-14 mb-12">
     @for (project of projectList; track project) {
-      <div class="bg-[#186E8B] p-5 rounded-xl">
-        <img [src]="project.image" class="w-full h-48 rounded-xl object-cover" alt="project image" />
-        <p class="text-center text-white text-xl font-semibold my-2">{{project.name}}</p>
-        <div class="flex flex-wrap gap-2">
-          @for (code of project.language; track code) {
-            <div class="bg-[#58A4B0] text-[#186E8B] rounded-full py-[1.5px]  px-4 font-semibold">
-              <p class="text-sm">{{code.language}}</p>
-            </div>
-          }
-        </div>
-        <p class="text-white my-5 text-sm">{{project.text}}</p>
-        <div class="block mt-6">
-          <a href="{{project.siteLink}}">
-            <button class="text-white flex items-center bg-[#1C95BD] rounded-full py-2 w-full justify-center gap-3 mb-4">
-              <i class="fa-solid fa-share-from-square mb-1"></i>
-              <p>Go to the site</p>
-            </button>
-          </a>
-          @if(project.github === false) {
-            <a href="{{project.gitLink}}">
-              <button class="text-white flex items-center bg-[#E34C26] rounded-full py-2 w-full justify-center gap-3">
-                <i class="fa-brands fa-gitlab"></i>
-                <p>Source code</p>
+      <div class="bg-[#186E8B] p-5 rounded-xl md:flex md:items-center md:gap-9">
+        <img [src]="project.image" class="w-full h-48 rounded-xl object-cover md:h-60 md:w-72" alt="project image" />
+        <div>
+          <p class="text-center text-white text-xl font-semibold my-2 md:text-left">{{project.name}}</p>
+          <div class="flex flex-wrap gap-2">
+            @for (code of project.language; track code) {
+              <div class="bg-[#58A4B0] text-[#186E8B] rounded-full py-[1.5px]  px-4 font-semibold">
+                <p class="text-sm">{{code.language}}</p>
+              </div>
+            }
+          </div>
+          <p class="text-white my-5 text-sm">{{project.text}}</p>
+          <div class="block mt-6 md:flex md:gap-4">
+            <a href="{{project.siteLink}}">
+              <button class="text-white flex items-center bg-[#1C95BD] rounded-full py-2 w-full justify-center gap-3 mb-4 md:px-4">
+                <i class="fa-solid fa-share-from-square mb-1"></i>
+                <p class="md:text-sm">Go to the site</p>
               </button>
             </a>
-          } @else {
-            <a href="{{project.gitLink}}">
-              <button class="text-white flex items-center bg-black rounded-full py-2 w-full justify-center gap-3">
-                <i class="fa-brands fa-github"></i>
-                <p>Source code</p>
-              </button>
-            </a>
-          }
+            @if(project.github === false) {
+              <a href="{{project.gitLink}}">
+                <button class="text-white flex items-center bg-[#E34C26] rounded-full py-2 w-full justify-center gap-3 md:px-4">
+                  <i class="fa-brands fa-gitlab"></i>
+                  <p class="md:text-sm">Source code</p>
+                </button>
+              </a>
+            } @else {
+              <a href="{{project.gitLink}}">
+                <button class="text-white flex items-center bg-black rounded-full py-2 w-full justify-center gap-3 md:px-4">
+                  <i class="fa-brands fa-github"></i>
+                  <p class="md:text-sm">Source code</p>
+                </button>
+              </a>
+            }
+          </div>
         </div>
       </div>
     }
@@ -295,12 +384,13 @@
 </div>
 
 <!-- Bloc Contact -->
-<div class="px-10 py-8">
-  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold" >Contact.</h2>
-  <div class="mt-8 mb-5">
-    <div class="bg-[#186E8B] text-white py-4 px-7 rounded-t-3xl">
-      <p class="text-2xl font-semibold font-Montserrat text-center">Let's get in touch !</p>
-      <p class="text-center mt-2 text-sm italic font-light">
+<div class="px-10 py-8 md:px-14 lg:px-32">
+  <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl">Contact.</h2>
+  <div class="mt-8 mb-5 md:flex md:justify-center md:my-12">
+    <!-- Section de gauche -->
+    <div class="bg-[#186E8B] text-white py-4 px-7 rounded-t-3xl md:py-8 md:px-10 md:rounded-l-3xl md:rounded-t-none md:w-1/2 relative">
+      <p class="text-2xl font-semibold font-Montserrat text-center md:text-left">Let's get in touch!</p>
+      <p class="text-center mt-2 text-sm italic font-light md:text-left">
         Please feel free to use my contact details and this contact form 
         if you wish to get in touch with me.
       </p>
@@ -318,40 +408,41 @@
         <i class="fa-solid fa-location-dot text-2xl"></i>
         <p class="text-sm font-semibold">Rennes, France</p>
       </div>
+
+      <!-- Petit bloc bleu supplémentaire visible en format md -->
+      <div class="hidden md:block absolute bottom-0 right-0 w-56 h-44 bg-[#2182A3] rounded-tl-3xl"></div>
     </div>
 
-    <div class="p-7 shadow rounded-b-3xl flex justify-center">
+    <!-- Section du formulaire à droite -->
+    <div class="p-7 shadow rounded-b-3xl md:rounded-b-none md:rounded-e-3xl flex justify-center md:w-1/2 md:bg-white md:p-10">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div>
-          <label for="mail" class="text-sm text-[#666666]">Your Email</label>
-          <input type="email" id="mail" name="mail" class="border-b" formControlName="mail">
+        <div class="mb-6">
+          <label for="mail" class="text-sm text-[#666666] block mb-2">Your Email</label>
+          <input type="email" id="mail" name="mail" class="border-b w-full focus:outline-none focus:ring-0 md:focus:border-[#186E8B]" formControlName="mail">
         </div>
 
-        <div class="mt-8">
-          <label for="name" class="text-sm text-[#666666]">Your Name</label>
-          <input type="text" id="name" name="name" class="border-b" formControlName="name">
+        <div class="mb-6">
+          <label for="name" class="text-sm text-[#666666] block mb-2">Your Name</label>
+          <input type="text" id="name" name="name" class="border-b w-full focus:outline-none focus:ring-0 md:focus:border-[#186E8B]" formControlName="name">
         </div>
 
-        <div class="mt-8">
-          <label for="subject" class="text-sm text-[#666666]">Your Subject</label>
-          <input type="text" id="subject" name="subject" class="border-b" formControlName="subject">
+        <div class="mb-6">
+          <label for="subject" class="text-sm text-[#666666] block mb-2">Your Subject</label>
+          <input type="text" id="subject" name="subject" class="border-b w-full focus:outline-none focus:ring-0 md:focus:border-[#186E8B]" formControlName="subject">
         </div>
 
-        <div class="my-8">
-          <label for="subject" class="text-sm text-[#666666]">Your Message</label>
-          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Bonjour,"></textarea>
+        <div class="mb-8">
+          <label for="message" class="text-sm text-[#666666] block mb-2">Your Message</label>
+          <textarea id="message" rows="4" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 md:focus:border-[#186E8B]" placeholder="Bonjour," formControlName="message"></textarea>
         </div>
 
-
-        <button
-          class="bg-[#186E8B] rounded-xl text-white w-full py-2"
-          type="submit"
-        >
+        <button class="bg-[#186E8B] rounded-xl text-white w-full py-2 md:w-full" type="submit">
           Send Message
         </button>
       </form>
     </div>
   </div>
 </div>
+
 
 <app-footer></app-footer>
