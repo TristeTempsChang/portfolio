@@ -15,6 +15,13 @@ module.exports = {
       'xl': '1280px',
       '1/2xl': '1400px'
     },
+    container: {
+      padding: {
+        md: '4rem',
+        xl: '6rem',
+        '2xl': '6rem',
+      },
+    },
   },
   plugins: [],
 }
