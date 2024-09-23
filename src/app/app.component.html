@@ -1,8 +1,8 @@
 <app-header></app-header>
 
 <!-- Bloc Home -->
-<div class="bg-[#58A4B0] pt-5 pb-10">
-  <div class="md:container md:mx-auto md:justify-evenly md:flex md:flex-row-reverse md:items-center lg:pt-16 lg:pb-20">
+<div class="bg-[#58A4B0] pt-24 pb-10">
+  <div class="md:container md:mx-auto md:justify-evenly md:flex md:flex-row-reverse md:items-center lg:pt-16 lg:pb-20 md:w-full">
     <div class="flex justify-center">
       <img src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72" />
     </div>
@@ -13,9 +13,8 @@
         <p class="font-Montserrat font-extrabold text-2xl text-white md:text-3xl lg:text-4xl xl:text-5xl">Tristan Tran</p>
         <p class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
           And I'm a 
-          <!-- <span id="text" class="text-xl font-bold text-[#186E8B] md:text-2xl lg:text-4xl"></span> -->
-          <!-- <span class="text-[#186E8B]" id="console">&#95;</span> -->
-          <span class="text-[#186E8B]">Full-Stack Developer</span>
+          <span id="text" class="text-xl font-bold text-[#186E8B] md:text-2xl lg:text-4xl"></span>
+          <span class="text-[#186E8B]" id="console">&#95;</span>
         </p>
       </div>
 
@@ -38,7 +37,7 @@
 <!-- Bloc About Me -->
 <div class="px-10 py-8 lg:py-10 xl:py-12">
   <div class="md:container md:mx-auto">
-    <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >About me.</h2>
+    <h2 appAnimateOnScroll class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >About me.</h2>
     <div class="md:flex md:flex-row-reverse md:items-center md:justify-between md:my-10">
       <div class="flex justify-center my-10 xl:my-0">
         <div class="relative inline-block">
@@ -47,23 +46,23 @@
         </div>
       </div>
       <div class="md:w-3/5">
-        <p class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl xl:text-2xl">
+        <p appAnimateOnScroll class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl xl:text-2xl">
           Hi, I'm Tristan Tran, a web development student. 
           I'm currently in my first year of an MBA in full-stack development.
-        </p>
-        <p class="mt-6 mb-3 text-sm font-light text-[#186E8B] xl:text-base">
+        </p>        
+        <p appAnimateOnScroll class="mt-6 mb-3 text-sm font-light text-[#186E8B] xl:text-base">
           I started working in web development at the end of high school after graduating from high school. 
           I've been in this field for over 3 years now.
         </p>
-        <p class="mb-3 text-sm font-light text-[#186E8B] xl:text-base">
+        <p appAnimateOnScroll class="mb-3 text-sm font-light text-[#186E8B] xl:text-base">
           During these 3 years, when I had the immense privilege of being able to study on a sandwich course throughout my career, 
           I obtained the following degrees :
         </p>
-        <ul class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4 xl:text-base">
+        <ul appAnimateOnScroll class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4 xl:text-base">
           <li>BTS SIO  ( Bac + 2 )</li>
           <li>Bachelor Concepteur Développeur D’applications  ( Bac + 3 )</li>
         </ul>
-        <p class="text-sm font-light text-[#186E8B] xl:text-base">
+        <p appAnimateOnScroll class="text-sm font-light text-[#186E8B] xl:text-base">
           My skills don't stop at development, I also do web design and SEO. 
           When I'm not watching code, I watch movies, practice or watch sports, 
           and play video games.
@@ -76,7 +75,7 @@
 <!-- Bloc Skills -->
 <div class="px-10 py-8 bg-[#58A4B0] lg:py-10 xl:py-12">
   <div class="md:container md:mx-auto">
-    <h2 class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >Skills.</h2>
+    <h2 appAnimateOnScroll [animationClass]="'animate-fade-in-right'" class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >Skills.</h2>
     <div class="flex flex-wrap gap-6 justify-center my-8 md:my-12">
       <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>

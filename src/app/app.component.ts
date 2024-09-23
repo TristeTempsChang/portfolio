@@ -4,11 +4,12 @@ import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
 import { project } from '../models/project.model';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AnimateOnScrollDirective } from './animate-on-scroll.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, ReactiveFormsModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, ReactiveFormsModule, AnimateOnScrollDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -22,13 +23,13 @@ export class AppComponent implements OnInit {
       mail: new FormControl('', {validators: [Validators.required]}),
       name: new FormControl('', {validators: [Validators.required]}),
       subject: new FormControl('', {validators: [Validators.required]}),
-      content: new FormControl('', {validators: [Validators.required]})
+      message: new FormControl('', {validators: [Validators.required]})
     });
   }
 
 
   ngOnInit(): void {
-    this.consoleText(['Web Developer', 'Full-Stack Developer', 'Geek'], 'text');
+    this.consoleText(['Web Dev', 'Full-Stack Dev', 'Geek'], 'text');
     this.projectList = [
       {
         "name": "GPEI",
