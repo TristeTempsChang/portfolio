@@ -2,10 +2,10 @@ import { Directive, ElementRef, Renderer2, AfterViewInit, OnDestroy, Input } fro
 
 @Directive({
   selector: '[appAnimateOnScroll]',
-  standalone: true, // This makes the directive standalone
+  standalone: true,
 })
 export class AnimateOnScrollDirective implements AfterViewInit, OnDestroy {
-  @Input() animationClass: string = 'animate-fade-in-left';
+  @Input('appAnimateOnScroll') animationClass: string = '';
   private observer!: IntersectionObserver;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
@@ -27,7 +27,9 @@ export class AnimateOnScrollDirective implements AfterViewInit, OnDestroy {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           console.log("C'est là");
-          this.renderer.addClass(this.el.nativeElement, this.animationClass);
+          if (this.animationClass) {
+            this.renderer.addClass(this.el.nativeElement, this.animationClass);
+          }
         } else {
           console.log("Pas là");
         }

@@ -3,11 +3,11 @@
 <!-- Bloc Home -->
 <div class="bg-[#58A4B0] pt-24 pb-10">
   <div class="md:container md:mx-auto md:justify-evenly md:flex md:flex-row-reverse md:items-center lg:pt-16 lg:pb-20 md:w-full">
-    <div class="flex justify-center">
-      <img src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72" />
+    <div class="flex justify-center animate-fade-in delay-image">
+      <img  src="../assets/info.png" alt="info-guy" class="w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72" />
     </div>
 
-    <div>
+    <div class="animate-fade-in-up">
       <div class="text-center text-white font-OpenSans mt-4 md:text-left">
         <p class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">Hello I'm</p>
         <p class="font-Montserrat font-extrabold text-2xl text-white md:text-3xl lg:text-4xl xl:text-5xl">Tristan Tran</p>
@@ -37,32 +37,32 @@
 <!-- Bloc About Me -->
 <div class="px-10 py-8 lg:py-10 xl:py-12">
   <div class="md:container md:mx-auto">
-    <h2 appAnimateOnScroll class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >About me.</h2>
+    <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >About me.</h2>
     <div class="md:flex md:flex-row-reverse md:items-center md:justify-between md:my-10">
       <div class="flex justify-center my-10 xl:my-0">
-        <div class="relative inline-block">
+        <div appAnimateOnScroll="animate-fade-in-right" class="relative inline-block">
           <div class="absolute inset-0 bg-[#58A4B0] w-full h-full translate-x-4 translate-y-4"></div>
           <img src="../assets/moi.jpeg" class="relative w-36 h-full md:w-full xl:w-52" alt="moi" />
         </div>
       </div>
       <div class="md:w-3/5">
-        <p appAnimateOnScroll class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl xl:text-2xl">
+        <p appAnimateOnScroll="animate-fade-in-left" class="text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl xl:text-2xl">
           Hi, I'm Tristan Tran, a web development student. 
           I'm currently in my first year of an MBA in full-stack development.
         </p>        
-        <p appAnimateOnScroll class="mt-6 mb-3 text-sm font-light text-[#186E8B] xl:text-base">
+        <p appAnimateOnScroll="animate-fade-in-left" class="mt-6 mb-3 text-sm font-light text-[#186E8B] xl:text-base">
           I started working in web development at the end of high school after graduating from high school. 
           I've been in this field for over 3 years now.
         </p>
-        <p appAnimateOnScroll class="mb-3 text-sm font-light text-[#186E8B] xl:text-base">
+        <p appAnimateOnScroll="animate-fade-in-left" class="mb-3 text-sm font-light text-[#186E8B] xl:text-base">
           During these 3 years, when I had the immense privilege of being able to study on a sandwich course throughout my career, 
           I obtained the following degrees :
         </p>
-        <ul appAnimateOnScroll class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4 xl:text-base">
+        <ul appAnimateOnScroll="animate-fade-in-left" class="list-disc mb-3 text-sm font-light text-[#186E8B] ml-4 xl:text-base">
           <li>BTS SIO  ( Bac + 2 )</li>
           <li>Bachelor Concepteur Développeur D’applications  ( Bac + 3 )</li>
         </ul>
-        <p appAnimateOnScroll class="text-sm font-light text-[#186E8B] xl:text-base">
+        <p appAnimateOnScroll="animate-fade-in-left" class="text-sm font-light text-[#186E8B] xl:text-base">
           My skills don't stop at development, I also do web design and SEO. 
           When I'm not watching code, I watch movies, practice or watch sports, 
           and play video games.
@@ -75,100 +75,100 @@
 <!-- Bloc Skills -->
 <div class="px-10 py-8 bg-[#58A4B0] lg:py-10 xl:py-12">
   <div class="md:container md:mx-auto">
-    <h2 appAnimateOnScroll [animationClass]="'animate-fade-in-right'" class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >Skills.</h2>
-    <div class="flex flex-wrap gap-6 justify-center my-8 md:my-12">
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+    <h2 class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >Skills.</h2>
+    <div class="flex flex-wrap gap-6 justify-center my-8 md:my-16">
+      <div appAnimateOnScroll="animate-fade-in-up" class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/html5.png" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="html" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">HTML</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="one bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/css3.svg" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="css" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">CSS</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="two bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/js.webp" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="js" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">Javascript</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="three bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/angular.png" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="angular" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">Angular</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="four bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/react.png" class="w-10 h-auto mt-2 xl:w-14" alt="react" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">React</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="five bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/tailwind.png" class="w-14 h-auto mt-4 mx-auto xl:w-20" alt="tailwind" />
           <p class="text-center text-xs mt-3 xl:text-base">TailwindCSS</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="six bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/NestJS.svg" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="Nest" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">NestJS</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="seven bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/mysql.svg" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="mysql" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">MySQL</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="eight bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/ror.png" class="w-16 h-auto mt-4 xl:w-24" alt="ror" />
           <p class="text-center text-xs mt-4 mb-3 xl:text-base">RubyOnRails</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="nine bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/node.png" class="w-16 h-auto mt-6 xl:w-24" alt="node" />
           <p class="text-center text-xs mt-4 xl:text-base">NodeJS</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="ten bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/docker.png" class="w-20 h-auto mt-6 xl:w-28" alt="docker" />
           <p class="text-center text-xs mt-4 xl:text-base">Docker</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="eleven bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/git.png" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="git" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">Git</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="twelve bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/figma.svg" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="figma" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">Figma</p>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
+      <div appAnimateOnScroll="animate-fade-in-up" class="thirtheen bg-white rounded-xl flex justify-center p-1 w-24 xl:w-28 drop-shadow-md">
         <div>
           <img src="../assets/gitlab.png" class="w-12 h-12 mt-2 xl:w-16 xl:h-16" alt="gitlab" />
           <p class="text-center text-xs mt-2 mb-1 xl:text-base">Gitlab</p>
@@ -195,7 +195,7 @@
             </div>
           </div>
 
-          <div class="w-52">
+          <div appAnimateOnScroll="animate-fade-in-right" class="w-52">
             <p class="font-Montserrat font-light text-sm text-center mb-2">September 2021 - July 2023</p>
             <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
               <div class="absolute -left-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#58A4B0]"></div>
@@ -220,7 +220,7 @@
             </div>
           </div>
 
-          <div class="w-52">
+          <div appAnimateOnScroll="animate-fade-in-right" class="w-52">
             <p class="font-Montserrat font-light text-xs text-center mb-2">September 2023 - August 2024</p>
             <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
               <div class="absolute -left-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#58A4B0]"></div>
@@ -246,7 +246,7 @@
             </div>
           </div>
 
-          <div class="w-52">
+          <div appAnimateOnScroll="animate-fade-in-right" class="w-52">
             <p class="font-Montserrat font-light text-sm text-center mb-2">September 2024 - Present</p>
             <div class="relative bg-[#58A4B0] text-white py-2 px-4 rounded-md">
               <div class="absolute -left-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#58A4B0]"></div>
@@ -266,7 +266,7 @@
     <div class="md:flex justify-center mt-8 mb-14 hidden lg:mt-14 lg:mb-20">
       <div>
         <div class="flex justify-center gap-6 items-start lg:mr-[3.6rem]">
-          <div class="w-52 lg:w-72 mt-6 xl:mt-10">
+          <div appAnimateOnScroll="animate-fade-in-left" class="w-52 lg:w-72 mt-6 xl:mt-10">
             <div class="relative bg-[#58A4B0] text-white py-4 px-6 rounded-md">
               <div class="absolute -right-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[10px] border-l-[#58A4B0]"></div>
               <p class="text-lg font-semibold lg:text-xl xl:text-2xl">Sandwich Course</p>
@@ -287,11 +287,11 @@
               <div class="bg-[#186E8B] w-1"></div>
             </div>
           </div>
-          <p class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base xl:text-lg xl:mt-14">September 2021 - July 2023</p>        
+          <p appAnimateOnScroll="animate-fade-in-right" class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base xl:text-lg xl:mt-14">September 2021 - July 2023</p>        
         </div>
 
         <div class="flex gap-6 justify-center items-start -mt-5 ml-3 lg:ml-14 xl:ml-0">
-          <p class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base xl:text-lg">September 2023 - August 2024</p>
+          <p appAnimateOnScroll="animate-fade-in-left" class="font-Montserrat font-light text-sm text-center mt-10 lg:text-base xl:text-lg">September 2023 - August 2024</p>
           <div>
             <div class="bg-[#186E8B] rounded-full py-4 px-5 xl:py-6 xl:px-7 mt-5">
               <i class="fa-solid fa-briefcase text-xl text-white xl:text-3xl"></i>
@@ -301,7 +301,7 @@
             </div>
           </div>
 
-          <div class="w-52 lg:w-72 mt-6">
+          <div appAnimateOnScroll="animate-fade-in-right" class="w-52 lg:w-72 mt-6">
             <div class="relative bg-[#58A4B0] text-white py-4 px-6 rounded-md">
               <div class="absolute -left-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[10px] border-r-[#58A4B0]"></div>
               <p class="text-lg font-semibold lg:text-xl xl:text-2xl">Sandwich Course</p>
@@ -317,7 +317,7 @@
         </div>
 
         <div class="flex gap-6 items-start -mt-5 ml-4 xl:ml-0">
-          <div class="w-52 lg:w-72 mt-6">
+          <div appAnimateOnScroll="animate-fade-in-left" class="w-52 lg:w-72 mt-6">
             <div class="relative bg-[#58A4B0] text-white py-4 px-6 rounded-md">
               <div class="absolute -right-2.5 top-4 w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[10px] border-l-[#58A4B0]"></div>
               <p class="text-lg font-semibold lg:text-xl xl:text-2xl">Sandwich Course</p>
@@ -336,7 +336,7 @@
               <div class="bg-[#186E8B] w-1"></div>
             </div>
           </div>
-          <p class="font-Montserrat font-light text-sm text-center mb-2 mt-10 lg:text-base xl:text-lg">September 2024 - Present</p>
+          <p appAnimateOnScroll="animate-fade-in-right" class="font-Montserrat font-light text-sm text-center mb-2 mt-10 lg:text-base xl:text-lg">September 2024 - Present</p>
         </div>
       </div>
     </div>
@@ -350,7 +350,7 @@
     <h2 class="text-xl font-Montserrat text-white font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl" >Projects.</h2>
     <div class="flex flex-wrap gap-14 mt-14 mb-12">
       @for (project of projectList; track project) {
-        <div class="bg-[#186E8B] p-5 rounded-xl md:flex md:items-center md:gap-9">
+        <div appAnimateOnScroll="animate-fade-in-up" class="bg-[#186E8B] p-5 rounded-xl md:flex md:items-center md:gap-9">
           <img [src]="project.image" class="w-full h-48 rounded-xl object-cover md:h-60 md:w-60 xl:h-72 xl:w-96" alt="project image" />
           <div>
             <p class="text-center text-white text-xl font-semibold my-2 md:text-left xl:text-2xl">{{project.name}}</p>
@@ -393,7 +393,7 @@
 </div>
 
 <!-- Bloc Contact -->
-<div class="px-10 py-8 lg:py-10 xl:py-12">
+<div appAnimateOnScroll="animate-fade-in" class="px-10 py-8 lg:py-10 xl:py-12">
   <div class="md:container md:mx-auto">
     <h2 class="text-xl font-Montserrat text-[#186E8B] font-bold md:text-2xl md:mt-3 lg:text-3xl xl:text-4xl">Contact.</h2>
     <div class="mt-8 mb-5 md:flex md:justify-center md:my-12">
