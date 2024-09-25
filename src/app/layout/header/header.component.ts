@@ -24,4 +24,9 @@ export class HeaderComponent {
   openNav() {
     this.showNav = true;
   }
+
+  scrollTo(section: string) {
+    document.querySelector(section)?.scrollIntoView({ behavior: 'smooth' });
+    this.showNav = false;
+  }
 }

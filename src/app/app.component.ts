@@ -18,12 +18,24 @@ export class AppComponent implements OnInit {
   projectList!: project[]
   contactForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({
-      mail: new FormControl('', {validators: [Validators.required]}),
-      name: new FormControl('', {validators: [Validators.required]}),
-      subject: new FormControl('', {validators: [Validators.required]}),
-      message: new FormControl('', {validators: [Validators.required]})
+      mail: new FormControl('', [
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')
+      ]),
+      name: new FormControl('', [
+        Validators.required,
+        Validators.pattern('^[a-zA-Z\\s]+$')
+      ]),
+      subject: new FormControl('', [
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9\\s]+$')
+      ]),
+      message: new FormControl('', [
+        Validators.required,
+        Validators.minLength(10)
+      ])
     });
   }
 
@@ -67,7 +79,7 @@ export class AppComponent implements OnInit {
           {language: "Docker"}
         ],
         "text": "La Virée Terroir is a project I created as part of my test for my Bachelor's degree. The site is also an application that puts local producers in touch with potential tourist customers, so that they can discover the specialties of the region they wish to visit.",
-        "siteLink": "",
+        "siteLink": "https://lavireeterroir.fr",
         "gitLink": "https://gitlab.com/tristan.tran2111/lavireeterroir-front",
         "github": false
       }
@@ -117,7 +129,9 @@ export class AppComponent implements OnInit {
     }, 400);
   }
 
-  onSubmit(){
-
+  onSubmit() {
+    if (this.contactForm.valid) {
+      console.log(this.contactForm.value);
+    }
   }
 }

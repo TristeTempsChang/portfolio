@@ -6,11 +6,11 @@
 
         <!--For tablet and desktop-->
         <div class="{{ scrolled ? 'text-[#58A4B0]' : 'text-white' }} hidden lg:flex font-semibold gap-7 items-center lg:text-lg font-OpenSans lg:gap-10">
-            <a href="#">About me</a>
-            <a href="#">Skills</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="cursor-pointer">About me</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="cursor-pointer">Skills</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="cursor-pointer">Experience</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#project')" class="cursor-pointer">Projects</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#contact')" class="cursor-pointer">Contact</a>
         </div>
 
         <!--For mobile-->
@@ -31,17 +31,17 @@
     <!-- Overlay content -->
     <div class="absolute top-1/4 text-xl w-full text-center font-OpenSans transition duration-[800ms] transform"
         [ngClass]="{'translate-y-full': !showNav, 'translate-y-0': showNav}">
-        <a href="#" class="block py-2 hover:text-white">About me</a>
-        <a href="#" class="block py-2 hover:text-white">Skills</a>
-        <a href="#" class="block py-2 hover:text-white">Experience</a>
-        <a href="#" class="block py-2 hover:text-white">Projects</a>
-        <a href="#" class="block py-2 hover:text-white">Contact</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="block py-2 hover:text-white">About me</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="block py-2 hover:text-white">Skills</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="block py-2 hover:text-white">Experience</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#project')" class="block py-2 hover:text-white">Projects</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#contact')" class="block py-2 hover:text-white">Contact</a>
     </div>
 
     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-5 text-2xl mt-5 pb-10 transition duration-[800ms]"
         [ngClass]="{'translate-y-full': !showNav, 'translate-y-0': showNav}">
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-gitlab"></i>
+        <a href="https://www.linkedin.com/in/tristan-tran-13a20a241/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/TristeTempsChang"><i class="fa-brands fa-github"></i></a>
+        <a href="https://gitlab.com/tristan.tran2111"><i class="fa-brands fa-gitlab"></i></a>
     </div>
 </div>
