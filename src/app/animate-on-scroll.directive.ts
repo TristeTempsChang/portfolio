@@ -23,21 +23,23 @@ export class AnimateOnScrollDirective implements AfterViewInit, OnDestroy {
   }
 
   private initObserver() {
-    this.observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          console.log("C'est là");
-          if (this.animationClass) {
-            this.renderer.addClass(this.el.nativeElement, this.animationClass);
+    if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      this.observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log("C'est là");
+            if (this.animationClass) {
+              this.renderer.addClass(this.el.nativeElement, this.animationClass);
+            }
+          } else {
+            console.log("Pas là");
           }
-        } else {
-          console.log("Pas là");
-        }
+        });
+      }, {
+        threshold: 0.1
       });
-    }, {
-      threshold: 0.1
-    });
 
-    this.observer.observe(this.el.nativeElement);
+      this.observer.observe(this.el.nativeElement);
+    }
   }
 }
