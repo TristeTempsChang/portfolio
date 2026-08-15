@@ -6,10 +6,10 @@
 
         <!--For tablet and desktop-->
         <div class="{{ scrolled ? 'text-[#58A4B0]' : 'text-white' }} hidden lg:flex font-semibold gap-7 items-center lg:text-lg font-OpenSans lg:gap-10">
-            <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="cursor-pointer">About me</a>
-            <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="cursor-pointer">Skills</a>
-            <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="cursor-pointer">Experience</a>
-            <a href="javascript:void(0)" (click)="scrollTo('#project')" class="cursor-pointer">Projects</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="cursor-pointer">À propos de moi</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="cursor-pointer">Compétences</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="cursor-pointer">Expériences</a>
+            <a href="javascript:void(0)" (click)="scrollTo('#project')" class="cursor-pointer">Projets</a>
             <a href="javascript:void(0)" (click)="scrollTo('#contact')" class="cursor-pointer">Contact</a>
         </div>
 
@@ -31,10 +31,10 @@
     <!-- Overlay content -->
     <div class="absolute top-1/4 text-xl w-full text-center font-OpenSans transition duration-[800ms] transform"
         [ngClass]="{'translate-y-full': !showNav, 'translate-y-0': showNav}">
-        <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="block py-2 hover:text-white">About me</a>
-        <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="block py-2 hover:text-white">Skills</a>
-        <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="block py-2 hover:text-white">Experience</a>
-        <a href="javascript:void(0)" (click)="scrollTo('#project')" class="block py-2 hover:text-white">Projects</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#about-me')" class="block py-2 hover:text-white">À propos de moi</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#skills')" class="block py-2 hover:text-white">Compétences</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#exp')" class="block py-2 hover:text-white">Expériences</a>
+        <a href="javascript:void(0)" (click)="scrollTo('#project')" class="block py-2 hover:text-white">Projets</a>
         <a href="javascript:void(0)" (click)="scrollTo('#contact')" class="block py-2 hover:text-white">Contact</a>
     </div>
 

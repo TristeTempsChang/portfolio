@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.consoleText(['Web Dev', 'Full-Stack Dev', 'Geek'], 'text');
+    this.consoleText(['Dev web', 'Dev Full-Stack', 'Passionné'], 'text');
     this.projectList = [
       {
         "name": "GPEI",
