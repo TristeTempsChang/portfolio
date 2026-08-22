@@ -52,28 +52,28 @@ export class AppComponent implements OnInit {
     this.consoleText(['Dev web', 'Dev Full-Stack', 'Passionné'], 'text');
     this.projectList = [
       {
-        "name": "GPEI",
+        "name": "GPEI (projet actuellement en cours de refonte)",
         "image": "../assets/gpei.png",
         "language": [
           {language: 'Angular'},
           {language: 'Firebase'}
         ],
-        "text": "GPEI is my very first web site/application project, which I completed in 2022, during my BTS exams. The site was intended for my mother's parents' association, and had the specificity of being able to manage the site with an administration section respecting CRUD principles.",
+        "text": "GPEI est mon tout premier projet de site web/application, que j'ai mené à bien en 2022, pendant mes examens du BTS. Ce site était destiné à l'association des parents d'élèves de ma mère et avait pour particularité de permettre la gestion du site via un espace d'administration respectant les principes CRUD.",
         "siteLink": "https://gpei-mennecy.fr",
-        "gitLink": "https://github.com/TristeTempsChang/GPEI",
+        "gitLink": null,
         "github": true
       },
       {
-        "name": "A Goose Brand",
-        "image": "../assets/goose.png",
+        "name": "La Brick Rouge",
+        "image": "../assets/brickrouge.png",
         "language": [
-          {language: "HTML"},
-          {language: "TailwindCSS"},
-          {language: "Javascript"}
+          {language: "VueJS"},
+          {language: "SCSS"},
+          {language: ".NET"}
         ],
-        "text": "A Goose Brand is a showcase website created as part of a school project called the MyDigitalSchool English Game. This one presents a board game created by my working group. The site also presents addons implemented online that are compatible with the board game.",
-        "siteLink": "https://agoosebrand.netlify.app/",
-        "gitLink": "https://github.com/TristeTempsChang/A-Goose-Brand",
+        "text": "La brick rouge est un projet constitué d'un site vitrine et d'un back-office que j'ai rejoint en cours de route. Ce projet avait été réalisé par un ami dans le cadre de l'activité de restaurateur de ses parents",
+        "siteLink": "https://labrickrouge.fr/",
+        "gitLink": null,
         "github": true
       },
       {
@@ -158,6 +158,7 @@ export class AppComponent implements OnInit {
           this.loading = false
           this.contactForm.reset();
         }, () => {
+          this.loading = false
           alert('Échec de l\'envoi du message.');
         });
 

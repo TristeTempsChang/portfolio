@@ -8,7 +8,7 @@ export class project {
     language: Language[];
     text: string;
     siteLink: string;
-    gitLink: string;
+    gitLink: string | null;
     github: boolean;
 
 
