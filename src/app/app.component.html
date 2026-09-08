@@ -52,7 +52,7 @@
       <div class="md:w-3/5">
         <p appAnimateOnScroll="animate-fade-in-left"
           class="hidden-before-animate text-center text-lg font-semibold text-[#186E8B] font-OpenSans md:text-left lg:text-xl xl:text-2xl">
-          Salut, je suis Tristan Tran, un étudiant en développement web.
+          Bonjour, je suis Tristan Tran, un étudiant en développement web.
           Je suis actuellement en dernière année de MBA en développement full-stack.
         </p>
         <p appAnimateOnScroll="animate-fade-in-left"
@@ -62,7 +62,7 @@
         </p>
         <p appAnimateOnScroll="animate-fade-in-left"
           class="hidden-before-animate mb-3 text-sm font-light text-[#186E8B] xl:text-base">
-          Au cours de ces trois années, durant lesquelles j'ai eu l'immense privilège de pouvoir suivre une formation en
+          Au cours de ces cinq années, durant lesquelles j'ai eu l'immense privilège de pouvoir suivre une formation en
           alternance tout en exerçant mon métier,
           j'ai obtenu les diplômes suivants :
         </p>
@@ -71,13 +71,14 @@
           <li>BTS SIO ( Bac + 2 )</li>
           <li>Bachelor Concepteur Développeur D’applications | Titre RNCP niveau 6 Concepteur développeur d'applications
             ( Bac + 3 )</li>
+          <li>MBA Développeur Full-Stack | Titre RNCP niveau 7 Manager de Projet Web Digital
+            ( Bac + 5 )</li>
         </ul>
         <p appAnimateOnScroll="animate-fade-in-left"
           class="hidden-before-animate text-sm font-light text-[#186E8B] xl:text-base">
           Mes compétences ne se limitent pas au développement : je m'occupe également de conception web et j'ai eu une
           petite expérience en SEO.
-          Sur mon temps libre, je code des petits projets et quand je ne code pas je fais du sport, je lis ou je joue à
-          des jeux-vidéos.
+          Sur mon temps libre, je code des petits projets (jeux, applications, machine learning...) ou alors je me forme à divers compétences dans l'informatique. Et quand je ne code pas je fais du sport
         </p>
       </div>
     </div>
@@ -403,23 +404,23 @@
               </button>
             </a>
             @if(project.gitLink) {
-              @if(project.github === false) {
-              <a href="{{project.gitLink}}">
-                <button
-                  class="text-white flex items-center bg-[#E34C26] rounded-full py-2 w-full justify-center gap-3 md:px-4">
-                  <i class="fa-brands fa-gitlab xl:text-2xl"></i>
-                  <p class="md:text-sm xl:text-base">Code source</p>
-                </button>
-              </a>
-              } @else {
-              <a href="{{project.gitLink}}">
-                <button
-                  class="text-white flex items-center bg-black rounded-full py-2 w-full justify-center gap-3 md:px-4">
-                  <i class="fa-brands fa-github xl:text-2xl"></i>
-                  <p class="md:text-sm xl:text-base">Code source</p>
-                </button>
-              </a>
-              }
+            @if(project.github === false) {
+            <a href="{{project.gitLink}}">
+              <button
+                class="text-white flex items-center bg-[#E34C26] rounded-full py-2 w-full justify-center gap-3 md:px-4">
+                <i class="fa-brands fa-gitlab xl:text-2xl"></i>
+                <p class="md:text-sm xl:text-base">Code source</p>
+              </button>
+            </a>
+            } @else {
+            <a href="{{project.gitLink}}">
+              <button
+                class="text-white flex items-center bg-black rounded-full py-2 w-full justify-center gap-3 md:px-4">
+                <i class="fa-brands fa-github xl:text-2xl"></i>
+                <p class="md:text-sm xl:text-base">Code source</p>
+              </button>
+            </a>
+            }
             }
           </div>
         </div>

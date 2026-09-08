@@ -52,13 +52,13 @@ export class AppComponent implements OnInit {
     this.consoleText(['Dev web', 'Dev Full-Stack', 'Passionné'], 'text');
     this.projectList = [
       {
-        "name": "GPEI (projet actuellement en cours de refonte)",
+        "name": "GPEI",
         "image": "../assets/gpei.png",
         "language": [
           {language: 'Angular'},
-          {language: 'Firebase'}
+          {language: 'PHP'}
         ],
-        "text": "GPEI est mon tout premier projet de site web/application, que j'ai mené à bien en 2022, pendant mes examens du BTS. Ce site était destiné à l'association des parents d'élèves de ma mère et avait pour particularité de permettre la gestion du site via un espace d'administration respectant les principes CRUD.",
+        "text": "GPEI est mon tout premier projet de site web/application, que j'ai mené à bien en 2022, pendant mes examens du BTS. Ce site était destiné à une association de parents d'élèves et avait pour particularité de permettre la gestion du site via un espace d'administration respectant les principes CRUD. Le site a subi une refonte graphique en 2026",
         "siteLink": "https://gpei-mennecy.fr",
         "gitLink": null,
         "github": true
@@ -86,9 +86,9 @@ export class AppComponent implements OnInit {
           {language: "NestJS"},
           {language: "Docker"}
         ],
-        "text": "La Virée Terroir is a project I created as part of my test for my Bachelor's degree. The site is also an application that puts local producers in touch with potential tourist customers, so that they can discover the specialties of the region they wish to visit.",
+        "text": "La Virée Terroir est un projet que j'ai créé dans le cadre de mon mémoire de licence. Ce site est également une application qui met en relation les producteurs locaux avec des touristes potentiels, afin que ces derniers puissent découvrir les spécialités de la région qu'ils souhaitent visiter.",
         "siteLink": "https://lavireeterroir.fr",
-        "gitLink": "https://gitlab.com/tristan.tran2111/lavireeterroir-front",
+        "gitLink": "null",
         "github": false
       }
     ]
